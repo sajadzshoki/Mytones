@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------- #
+scroll bars
+right menu fixed and made
+top nav background color and icons went into profile div
+left menu margins fixed
+more responsiv erywhere (middle 1)
+middle 1 scroll bar
+middle 4 made
+backg fixed
+middle 5 made
+
+
+# ---------------------------------------------------------------------------- #
+
+8/19/2022
+
+a hrefs fixed
+media query 1600px made
+
+
+# ---------------------------------------------------------------------------- #
+transiton darkmode 0.3 set
+max height right menu

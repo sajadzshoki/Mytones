@@ -1,0 +1,346 @@
+/* reset................................................ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(17, 0, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  cursor: pointer;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(158, 198, 199) 0%, #4e9edb 100%);
+  background-color: #a7d1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  width: 65%;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.647);
+}
+.signin-form {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.field {
+  width: 100%;
+  height: 35px;
+  margin: 1rem 0rem;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.form h3 {
+  font-weight: 400;
+}
+
+.field:focus {
+  box-shadow: rgba(0, 0, 255, 0.441) 0px 0px 10px;
+}
+.password-container {
+  position: relative;
+}
+.password-eye {
+  position: absolute;
+  top: 49px;
+  right: 15px;
+  color: rgb(123, 123, 123);
+  font-size: 0.8rem;
+}
+
+.password-eye-show {
+  visibility: hidden;
+  position: absolute;
+  top: 49px;
+  right: 15px;
+  color: rgb(123, 123, 123);
+  font-size: 0.8rem;
+}
+.password-eye-show.active {
+  visibility: visible;
+}
+.password-eye.active {
+  visibility: hidden;
+}
+.rememberMe {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.rememberMe input {
+  border-radius: 0px;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: red;
+}
+.loginBtn {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  height: 40px;
+  align-self: center;
+  border: none;
+  border-radius: 45px;
+  background: linear-gradient(
+    55deg,
+    rgba(45, 29, 253, 1) 20%,
+    rgb(176, 62, 252) 100%
+  );
+  background-color: #4343ef;
+  color: white;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.loginBtn:hover {
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+  width: 98%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.line {
+  background-color: black;
+  height: 1px;
+  position: relative;
+  margin: 2rem 0rem;
+}
+.line::before {
+  position: absolute;
+  content: "Or";
+  left: 48%;
+  bottom: 5px;
+}
+.google,
+.facebook {
+  width: 80%;
+  height: 50px;
+  border-radius: 1px;
+  background-color: rgba(255, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0rem;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.google i,
+.facebook i {
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
+.facebook {
+  background-color: rgba(8, 0, 255, 0.8);
+}
+.google:hover {
+  text-decoration: none;
+  color: red;
+  background-color: white;
+  width: 50%;
+  box-shadow: red 0px 0px 20px;
+  border-radius: 30px;
+}
+.facebook:hover {
+  text-decoration: none;
+  color: rgba(8, 0, 255, 0.8);
+  background-color: white;
+  width: 55%;
+  box-shadow: rgba(8, 0, 255, 0.8) 0px 0px 20px;
+  border-radius: 30px;
+}
+.new-here {
+  display: flex;
+  margin-top: 1rem;
+}
+.signin-panel,
+.signup-panel,
+.signup-form {
+  display: none;
+}
+
+/* ------------------------------ biger monitor ------------------------------ */
+@media (min-width: 1000px) {
+  .form {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 90%;
+  }
+
+  .signin-form {
+    width: 100%;
+    transition: 0.5s;
+    position: relative;
+  }
+  .signup-form {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    visibility: hidden;
+  }
+  .signup-panel {
+    display: flex;
+    background: url(../project-site-tech-mec/pics/sign\ up\ panel\ image.svg)
+      rgba(27, 92, 255, 0.736);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 140px 370px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 0px 30px 30px 0px;
+    flex-direction: column;
+    transition: 0.5s;
+    position: relative;
+  }
+  .signin-panel {
+    display: none;
+    background: url(../project-site-tech-mec/pics/sign\ in\ panel\ image.svg)
+      rgb(195, 31, 255);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 140px 370px;
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .signup-panel h1 {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .signup-panel p {
+    color: white;
+    margin: 1rem 2rem;
+    text-align: center;
+  }
+
+  .welcomeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .signupBtn {
+    width: 30%;
+    margin-top: 1.5rem;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(255, 58, 248);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .signinBtn {
+    width: 30%;
+    margin-top: 1.5rem;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(8, 0, 255, 1);
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .signupBtn:hover {
+    height: 50px;
+    width: 35%;
+    font-size: 1.4rem;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+  }
+  .signinBtn:hover {
+    height: 50px;
+    width: 35%;
+    font-size: 1.4rem;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  }
+  .new-here {
+    display: none;
+  }
+  /* ------------------------------- animations ------------------------------- */
+  .signin-form.active {
+    transform: translateX(100%);
+  }
+  .signup-panel.active {
+    transform: translateX(-100%);
+    border-radius: 30px 30px 30px 30px;
+    transition: 0.5s;
+  }
+  .signin-panel.active {
+    display: flex;
+    border-radius: 30px 0px 0px 30px;
+  }
+  .signup-form.active {
+    visibility: visible;
+    background-color: #c3ccff;
+    border-radius: 0px 30px 30px 0px;
+    height: 100%;
+    
+  }
+}
+@media (max-width: 480px) {
+  .signin-form {
+    padding: 15px;
+  }
+  .rememberMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rememberMe input {
+    margin-bottom: 1rem;
+  }
+}

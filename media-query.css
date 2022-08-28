@@ -1,0 +1,281 @@
+@media (max-width: 1400px) {
+  .navLeft {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: -100%;
+    transition: 0.5s;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .navLeft.active {
+    top: 0;
+    box-shadow: 0 0 0 1200px rgba(0, 0, 0, 0.393);
+  }
+
+  .menu {
+    border-right: solid 1px #767676;
+  }
+
+  .mainLogo {
+    display: flex;
+    align-items: center;
+  }
+
+  .mainLogo a {
+    font-size: 2.5rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* ----grids-------- */
+  .middle {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .navbar {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    z-index: 99;
+  }
+}
+
+/* ---------------------------------- 1100px ---------------------------------------- */
+@media (max-width: 1100px) {
+  .search-icon {
+    display: flex;
+    color: #686868;
+    font-size: 2rem;
+    z-index: 1;
+  }
+  .search-icon.active {
+    display: none;
+  }
+
+  .searchBar {
+    position: absolute;
+    top: -100%;
+  }
+  .searchBar.active {
+    top: 0;
+  }
+  .rightMenuList,
+  .rightMenuHeader,
+  .player p,
+  i.fa-shuffle,
+  i.fa-repeat,
+  #lyrics {
+    display: none;
+  }
+  a.profile-image-txt {
+    display: none;
+  }
+  .rightMenu {
+    position: sticky;
+    bottom: 0;
+    border-radius: 3rem;
+    background-color: rgb(216, 216, 216);
+    z-index: 5;
+  }
+
+  .playerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 4rem;
+  }
+
+  .player {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .player .songImage {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .mediaPlayback i {
+    margin: 0rem 1rem;
+  }
+
+  .mediaPlayback {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  i.fa-circle-pause {
+    font-size: 2.5rem;
+  }
+
+  i.fa-forward-step,
+  i.fa-backward-step {
+    font-size: 2rem;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  /* ----grids-------- */
+  .middle {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .rightMenu {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
+/* ---------------------------------- phone --------------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin: 0.1rem;
+    position: relative;
+  }
+  .navbar ul li:nth-child(n+2) {
+    display: none;
+  }
+  a.profile-image-txt {
+    display: none;
+  }
+  .navbar-icon-open {
+    display: flex;
+  }
+  .profile {
+    position: absolute;
+    top: -120%;
+    right: 5%;
+    background-color: rgba(234, 248, 255, 0.901);
+    padding: 23px;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .profile.active {
+    top: 0;
+  }
+  .navLeft {
+    background-color: rgba(255, 255, 255, 0.901);
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .navLeft.active {
+    left: 0%;
+    box-shadow: none;
+  }
+
+  .menu {
+    border-right: none;
+  }
+
+  .mainLogo {
+    display: none;
+  }
+
+  .rightMenu {
+    display: none;
+  }
+
+  .middle1,
+  .middle2,
+  .middle3,
+  .middle4,
+  .middle5,
+  .middle6,
+  .middle7,
+  .middle8 {
+    margin: 2rem 1rem 2rem 1rem;
+  }
+
+  .middle1 {
+    padding: 1rem;
+    max-height: 20em;
+    overflow: auto;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  .middle1-img {
+    display: none;
+  }
+
+  .middle3 {
+    flex-direction: column;
+  }
+
+  .exploreContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    overflow: auto;
+  }
+
+  .middle4 .featuredAlbum img {
+    height: 8rem;
+    width: 13rem;
+    border-radius: 20px;
+  }
+
+  .middle6Container img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+  }
+
+  .trackInfo p {
+    font-size: 1rem;
+  }
+
+  .trackInfo a {
+    font-size: smaller;
+  }
+
+  .middle7Header {
+    padding: 1rem 0rem 2rem 0rem;
+  }
+
+  .album img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 13px;
+    margin-bottom: 1rem;
+  }
+}
