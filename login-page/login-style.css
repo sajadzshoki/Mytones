@@ -32,7 +32,7 @@ img {
 .form {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
-  width: 65%;
+  width: 70%;
   max-width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.647);
 }
@@ -77,18 +77,22 @@ img {
 }
 
 .password-eye-show {
-  visibility: hidden;
+  display: none;
   position: absolute;
-  top: 49px;
+  top: 52px;
   right: 15px;
   color: rgb(123, 123, 123);
   font-size: 0.8rem;
+  text-decoration: none;
+}
+.password-eye-show:hover {
+  text-decoration: none;
 }
 .password-eye-show.active {
-  visibility: visible;
+  display: flex;
 }
 .password-eye.active {
-  visibility: hidden;
+  display: none;
 }
 .rememberMe {
   display: flex;
@@ -192,20 +196,29 @@ img {
   display: flex;
   margin-top: 1rem;
 }
+.new-here a {
+  margin-left: 0.5rem;
+}
 .signin-panel,
 .signup-panel,
 .signup-form {
   display: none;
 }
+.signin-form.active{
+  
+}
+.signup-form.active{
+  
+}
 
 /* ------------------------------ biger monitor ------------------------------ */
 @media (min-width: 1000px) {
   .form {
-    max-width: 1000px;
+    max-width:1400px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 90%;
+    height: 80%;
   }
 
   .signin-form {
@@ -224,7 +237,8 @@ img {
   }
   .signup-panel {
     display: flex;
-    background: url(../project-site-tech-mec/pics/sign\ up\ panel\ image.svg)
+    align-items: center;
+    background: url(../pics/sign\ up\ panel\ image.svg)
       rgba(27, 92, 255, 0.736);
     background-size: 45%;
     background-repeat: no-repeat;
@@ -238,7 +252,8 @@ img {
   }
   .signin-panel {
     display: none;
-    background: url(../project-site-tech-mec/pics/sign\ in\ panel\ image.svg)
+    
+    background: url(../pics/sign\ in\ panel\ image.svg)
       rgb(195, 31, 255);
     background-size: 45%;
     background-repeat: no-repeat;
@@ -321,6 +336,7 @@ img {
   }
   .signin-panel.active {
     display: flex;
+    align-items: center;
     border-radius: 30px 0px 0px 30px;
   }
   .signup-form.active {
@@ -332,6 +348,9 @@ img {
   }
 }
 @media (max-width: 480px) {
+  .form{
+    width: 90%;
+  }
   .signin-form {
     padding: 15px;
   }
