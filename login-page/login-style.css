@@ -18,13 +18,19 @@ a:hover {
 img {
   cursor: pointer;
 }
-
+.mainLogo{
+  margin-bottom: 3rem;
+}
+.logo{
+  font-size: 3rem;
+}
 .page {
   height: 100vh;
   width: 100%;
   background: linear-gradient(to bottom, rgb(158, 198, 199) 0%, #4e9edb 100%);
   background-color: #a7d1f1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

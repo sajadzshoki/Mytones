@@ -19,20 +19,28 @@ img {
 
 .header a {
   margin-right: 1rem;
-  color: #4d4d56;
+  color: var(--gray);
   font-size: small;
 }
 
 .header p {
-  color: #000000;
+  color: var(--black);
   font-size: large;
 }
 
 .header a:hover {
-  color: #4343ef;
+  color: var(--purple);
 
 }
-
+:root{
+  --purple:#4343ef;
+  --gray:#4d4d56;
+  --white:#fff;
+  --black:#000000;
+  --middleBackground:#f0f0f5c4;
+  --blueHover:#0000ff;
+  --red:rgb(255, 0, 0);
+}
 /* navbar top ---------------------------------------------------- */
 .navbar {
   background-color: rgba(255, 255, 255, 0.9);
@@ -61,7 +69,7 @@ img {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #4d4d56;
+  background-color: var(--gray);
   ;
 }
 
@@ -77,13 +85,13 @@ img {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #4d4d56;
+  color: var(--gray);
   border-bottom: solid 0px;
   padding: 3px;
 }
 
 .navbar ul li a:hover {
-  color: #4343ef;
+  color: var(--purple);
   border-bottom: solid 2px;
   padding: 3px;
 }
@@ -109,7 +117,7 @@ img {
   top:10px;
   right: 20px;
   font-size: large;
-  color:#4d4d56;
+  color:var(--gray);
 }
 .searchBar :hover {
   border: none;
@@ -139,7 +147,7 @@ img {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .logos {
@@ -148,13 +156,13 @@ img {
 }
 
 .logos a {
-  color: #4d4d56;
+  color: var(--gray);
   margin: 0rem 0.5rem;
   font-size: 1.3rem;
 }
 
 .logos a:hover {
-  color: #ff0000;
+  color: var(--red);
 }
 .loginBtn {
   width: 120px;
@@ -163,7 +171,7 @@ img {
   border: none;
   border-radius: 40px;
   background: linear-gradient(90deg,  rgb(102, 0, 255) 0%, rgb(0, 217, 255) 100%);
-  color: white;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -189,11 +197,11 @@ img {
 
 .mainLogo a {
   font-size: 1.5rem;
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .mainLogo :hover {
-  text-shadow: #4343ef 0rem 0rem 0.5rem;
+  text-shadow: var(--purple) 0rem 0rem 0.5rem;
 }
 
 .menu {
@@ -206,13 +214,13 @@ img {
 
 .menu ul li {
   list-style-type: none;
-  border-right: #4343ef none 0.3rem;
+  border-right: var(--purple) none 0.3rem;
   padding: 0.5rem 2rem 0.5rem 0rem;
   transition: 0.2s;
 }
 
 .menu a {
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .menu h4 {
@@ -225,21 +233,21 @@ img {
 }
 
 .menu li:hover {
-  border-right: #4343ef solid 0.3rem;
+  border-right: var(--purple) solid 0.3rem;
   background-color: aliceblue;
 
 }
 
 .menu a:hover {
-  color: #4343ef;
+  color: var(--purple);
 
 }
 
 /* rightMenu---------------------------------------------------------------------- */
 .rightMenu {
-  background-color: #ffffff;
+  background-color: var(--var(--white));
   max-height: 100vh;
-  color: #4d4d56;
+  color: var(--gray);
   padding-right: 0.7rem;
   position: sticky;
   right: 0;
@@ -275,17 +283,17 @@ img {
 }
 
 .songMenu:hover {
-  background-color: #4343ef42;
+  background-color: var(--purple)42;
   padding: 1rem 0rem 1rem 2rem;
 
 }
 
 .songMenu a {
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .songMenu a :hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .songMenu img {
@@ -294,26 +302,26 @@ img {
 }
 
 .songMenu img:hover {
-  box-shadow: #000000 0px 0px 5px;
+  box-shadow: var(--black) 0px 0px 5px;
 }
 
 .songMenu h5 {
   font-size: 15px;
   margin-left: 1rem;
   font-weight: 450;
-  color: #000000;
+  color: var(--black);
 }
 
 .songMenu h5 i {
   position: absolute;
   right: 1rem;
   top: 1.5rem;
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .subtitle {
   font-size: 11px;
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .rightSongImg {
@@ -347,27 +355,27 @@ img {
 
 
 .player img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 .player p {
   font-size: 1.5rem;
-  color: #4d4d56;
+  color: var(--gray);
   font-weight: 300;
 }
 
 .player h1 {
   font-weight: 400;
   margin-bottom: 0.5rem;
-  color: #000000;
+  color: var(--black);
 }
 
 .player a {
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .player a:hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 /* slider */
@@ -386,7 +394,7 @@ img {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background: #4343ef;
+  background: var(--purple);
   cursor: pointer;
 }
 
@@ -410,7 +418,7 @@ img {
   justify-content: space-around;
   align-items: center;
   font-size: 1rem;
-  color: #4343ef;
+  color: var(--purple);
 
 }
 
@@ -429,7 +437,7 @@ img {
 }
 
 .mediaPlayback i:hover {
-  color: #0000ff;
+  color: var(--blueHover);
 }
 
 #lyrics {
@@ -442,7 +450,7 @@ img {
 
 /* middle---------------------------------------------------------------------- */
 .middle {
-  background-color: #f0f0f5c4;
+  background-color: var(--middleBackground);
   border-radius: 15px;
   transition: 0.3s;
 }
@@ -456,7 +464,7 @@ img {
   padding: 1rem;
   max-height: 15em;
   overflow: auto;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
@@ -465,7 +473,7 @@ img {
 
 .middle1-img {
   height: 280px;
-  filter: drop-shadow(0px 0px 5px #0000008a);
+  filter: drop-shadow(0px 0px 5px var(--black)8a);
 
 
 }
@@ -473,8 +481,8 @@ img {
 .middle1 h1 {
   margin: 1rem 0rem 2rem 0rem;
   font-weight: 400;
-  color: #4343ef;
-  border-left: #4343ef solid;
+  color: var(--purple);
+  border-left: var(--purple) solid;
   padding-left: 1rem;
 }
 
@@ -484,20 +492,20 @@ img {
 }
 
 .btn {
-  background-color: #4343ef;
+  background-color: var(--purple);
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--white);
   margin-top: 1.8rem;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .btn:hover {
-  color: #4343ef;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 20px #4343ef;
+  color: var(--purple);
+  background-color: var(--var(--white));
+  box-shadow: 0px 0px 20px var(--purple);
 
 }
 
@@ -522,7 +530,7 @@ img {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -553,21 +561,21 @@ img {
 }
 
 .topArtists a {
-  color: #000000;
+  color: var(--black);
   padding-top: 0.5rem;
 }
 
 .topArtists p {
-  color: #4d4d56;
+  color: var(--gray);
   padding-top: 0.25rem;
 }
 
 .topArtists a:hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .topArtists img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 /* --------------------------------- middle3 -------------------------------- */
@@ -587,7 +595,7 @@ img {
 
 .middle3Left {
   padding: 1rem;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -604,38 +612,38 @@ img {
 }
 
 .topCollection img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 .middle3-left-header a {
-  color: #4d4d56;
+  color: var(--gray);
   font-size: small;
 }
 
 .middle3-left-header p {
-  color: #000000;
+  color: var(--black);
   font-size: large;
 }
 
 .middle3-left-header a:hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle3Right {
   padding: 1rem;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 .middle3-right-header a {
-  color: #4d4d56;
+  color: var(--gray);
   font-size: small;
 }
 
 .middle3-right-header p {
-  color: #000000;
+  color: var(--black);
   font-size: large;
 }
 
@@ -643,7 +651,7 @@ img {
 
 /* genre btns */
 .genreBtns {
-  color: #fff;
+  color: var(--white);
   border: none;
   border-radius: 12px;
   padding: 0.4rem 1.2rem;
@@ -654,9 +662,9 @@ img {
 }
 
 .genreBtns:hover {
-  color: #4343ef;
-  background-color: white;
-  box-shadow: 0px 0px 15px #4343ef;
+  color: var(--purple);
+  background-color: var(--white);
+  box-shadow: 0px 0px 15px var(--purple);
 
 }
 
@@ -702,15 +710,15 @@ img {
 #explore-page {
   margin: 2rem 0rem 4rem 3rem;
   font-weight: 400;
-  color: #4343ef;
-  border-left: #4343ef solid;
+  color: var(--purple);
+  border-left: var(--purple) solid;
   padding-left: 1rem;
 }
 
 .middle4 {
   margin: 4rem 2rem 4rem 2rem;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--var(--white));
   border-radius: 15px;
 
 }
@@ -744,7 +752,7 @@ img {
 }
 
 .featuredAlbum a {
-  color: #ffffff;
+  color: var(--var(--white));
   position: absolute;
   bottom: 1.5rem;
   font-size: 1.3rem;
@@ -753,12 +761,12 @@ img {
 }
 
 .featuredAlbum a:hover {
-  color: #4343ef;
+  color: var(--purple);
 
 }
 
 .featuredAlbum img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
   filter: blur(2px);
 
 }
@@ -767,7 +775,7 @@ img {
 .middle5 {
   margin: 2rem 2rem 2rem 2rem;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -801,25 +809,25 @@ img {
 }
 
 .newMusic img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 .newMusic a {
-  color: #000000;
+  color: var(--black);
   padding-top: 0.5rem;
 }
 
 .newMusic p {
-  color: #4d4d56;
+  color: var(--gray);
   padding-top: 0.25rem;
 }
 
 .newMusic a:hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .newMusic img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
   transition: 0.2s;
 
 }
@@ -840,15 +848,15 @@ img {
   align-items: center;
   padding: 0rem 3rem 2rem 0rem;
   font-size: 1.1rem;
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle6Header i {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle6Header i:hover {
-  color: #0000ff;
+  color: var(--blueHover);
 }
 
 .middle6Header p {
@@ -856,7 +864,7 @@ img {
 }
 
 .middle6Container {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   display: flex;
   flex-direction: row;
@@ -870,7 +878,7 @@ img {
 .middle6Container:hover {
   margin: 0.5rem 2rem;
 
-  background-color: #4343ef18;
+  background-color: var(--purple)18;
 }
 
 .middle6Container img {
@@ -880,7 +888,7 @@ img {
 }
 
 .middle6Container img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 .songInfo {
@@ -900,12 +908,12 @@ img {
 }
 
 .trackInfo a {
-  color: #4d4d56;
+  color: var(--gray);
   padding-top: 0.5rem;
 }
 
 .trackInfo a:hover {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle6Icons {
@@ -917,23 +925,23 @@ img {
 .middle6Icons i {
   margin: 0rem 0.8rem;
   font-size: 1.3rem;
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 .middle6Icons i:hover {
-  color: red;
+  color: var(--red);
 }
 
 .middle6Icons p {
-  color: #4d4d56;
+  color: var(--gray);
 }
 
 /* -------------------------------- middle 7 -------------------------------- */
 #albums-page {
   margin: 2rem 0rem 4rem 3rem;
   font-weight: 400;
-  color: #4343ef;
-  border-left: #4343ef solid;
+  color: var(--purple);
+  border-left: var(--purple) solid;
   padding-left: 1rem;
 }
 
@@ -941,7 +949,7 @@ img {
 .middle7 {
   margin: 3rem 2rem 4rem 2rem;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--var(--white));
   border-radius: 15px;
   overflow: hidden;
 }
@@ -963,11 +971,11 @@ img {
 }
 
 .album img:hover {
-  box-shadow: #000000 0px 0px 10px;
+  box-shadow: var(--black) 0px 0px 10px;
 }
 
 .album a {
-  color: #4d4d56;
+  color: var(--gray);
 
 }
 
@@ -978,7 +986,7 @@ img {
 }
 
 .album a:hover {
-  color: #4343ef
+  color: var(--purple)
 }
 
 .middle7Header {
@@ -988,11 +996,11 @@ img {
   align-items: center;
   padding: 2rem 5rem 2rem 0rem;
   font-size: 1.1rem;
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle7Header i {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle7Header p {
@@ -1001,15 +1009,15 @@ img {
 
 .middle7Header h1 {
   font-weight: 400;
-  color: #4343ef;
-  border-left: #4343ef solid;
+  color: var(--purple);
+  border-left: var(--purple) solid;
   padding-left: 1rem;
 
 }
 
 /* -------------------------------- middle 8 -------------------------------- */
 .middle8 {
-  background-color: white;
+  background-color: var(--white);
   margin: 4rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: row;
@@ -1040,7 +1048,7 @@ img {
 }
 
 .artists:hover {
-  border-right: solid #4343ef 6px;
+  border-right: solid var(--purple) 6px;
   background-color: aliceblue;
   padding-right: 2rem;
 
@@ -1057,7 +1065,7 @@ img {
   margin-left: 1.5rem;
   /* padding-left: 1rem; */
   font-size: 1.3rem;
-  color: #000000;
+  color: var(--black);
 }
 
 /* middle 8 right  */
@@ -1088,16 +1096,16 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  color: #4343ef;
+  color: var(--purple);
   margin: 2rem 0rem;
 }
 
 .middle8Header i {
-  color: #4343ef;
+  color: var(--purple);
 }
 
 .middle8Header i:hover {
-  color: #0000ff;
+  color: var(--blueHover);
 }
 
 .middle8Header p {
@@ -1118,12 +1126,12 @@ img {
 }
 
 .seeMore {
-  color: #4343ef;
+  color: var(--purple);
 
 }
 
 .seeMore:hover {
-  color: #0000ff;
+  color: var(--blueHover);
   text-decoration: underline;
 }
 
@@ -1147,7 +1155,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to top, #8543ef 0%, #4343ef 100%);
+  background: linear-gradient(to top, #8543ef 0%, var(--purple) 100%);
 }
 
 /* Grid---------------------------------------------------------------------- */
