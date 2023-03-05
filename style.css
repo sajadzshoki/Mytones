@@ -734,7 +734,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .featuredAlbum {
@@ -785,7 +785,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -951,7 +951,7 @@ img {
   padding: 1rem;
   background-color: var(--var(--white));
   border-radius: 15px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .albumsContainer {
@@ -1116,7 +1116,7 @@ img {
 .middle8ImageContainer {
   display: flex;
   justify-content: space-evenly;
-  overflow: hidden;
+  overflow: auto;
 
   margin-bottom: 3rem;
 }
